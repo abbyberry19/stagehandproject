@@ -4,6 +4,7 @@ import SignupView from '../components/SignupView.vue'
 import LoginView from '../components/LoginView.vue'
 import ProfileView from '../components/ProfileView.vue'
 import CalendarView from '../components/CalendarView.vue'
+import FilesView from '../components/FilesView.vue'
 import SettingsView from '../components/SettingsView.vue'
 
 const routes = [
@@ -31,6 +32,11 @@ const routes = [
         path: '/calendar',
         name: 'calendar',
         component: CalendarView
+    },
+    {
+        path: '/files',
+        name: 'files',
+        component: FilesView
     },
     {
         path: '/settings',

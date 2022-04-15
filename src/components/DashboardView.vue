@@ -10,6 +10,8 @@
         />
       </v-col>
 
+      <NavDrawer />
+
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to the Vuetify 3 Beta
@@ -94,9 +96,13 @@
 
 <script>
 
-export default {
-  name: 'HelloWorld',
+import NavDrawer from './ui/NavDrawer.vue'
 
+export default {
+  name: 'DashboardView',
+  components: {
+    NavDrawer
+  },
   data: () => ({
     ecosystem: [
       {
