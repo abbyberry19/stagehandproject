@@ -4,6 +4,7 @@
       <v-navigation-drawer
         expand-on-hover
         rail
+        permanent 
       >
         <v-list>
           <v-list-item
@@ -18,12 +19,10 @@
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home" title="Dashboard" value="Dashboard" href="/dashboard"></v-list-item>
           <v-list-item prepend-icon="mdi-folder" title="Files" value="Files" href="/files"></v-list-item>
-          <v-list-item prepend-icon="mdi-cog" title="Calendar" value="Calendar" href="/calendar"></v-list-item>
-          <v-list-item prepend-icon="mdi-calendar-month" title="Settings" value="Settings" href="/settings"></v-list-item>
+          <v-list-item prepend-icon="mdi-calendar-month" title="Calendar" value="Calendar" href="/calendar"></v-list-item>
+          <v-list-item prepend-icon="mdi-cog" title="Settings" value="Settings" href="/settings"></v-list-item>
         </v-list>
       </v-navigation-drawer>
-
-      <v-main style="height: 250px"></v-main>
     </v-layout>
   </v-card>
 </template>

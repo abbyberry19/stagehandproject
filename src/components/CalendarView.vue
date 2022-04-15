@@ -1,4 +1,7 @@
 <template>
+
+  <NavDrawer />
+  
   <v-row class="fill-height">
     <v-col>
       <v-sheet height="64">
@@ -133,7 +136,12 @@
 </template>
 
 <script>
+import NavDrawer from './ui/NavDrawer.vue'
+
   export default {
+    components: {
+      NavDrawer
+    },
     data: () => ({
       focus: '',
       type: 'month',
