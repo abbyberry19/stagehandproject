@@ -5,6 +5,8 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+//import About from './About.vue'
+//import NotFound from './NotFound.vue'
 
 export default {
   name: 'App',
