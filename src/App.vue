@@ -1,14 +1,14 @@
 <script>
-import Signup from './components/Signup.vue'
-import Login from './components/Login.vue'
-import Dashboard from './components/Dashboard.vue'
-import Profile from './components/Profile.vue'
-import Calendar from './components/Calendar.vue'
-import Settings from './components/Settings.vue'
+import SignupView from './components/SignupView.vue'
+import LoginView from './components/LoginView.vue'
+import DashboardView from './components/DashboardView.vue'
+import ProfileView from './components/ProfileView.vue'
+import CalendarView from './components/CalendarView.vue'
+import SettingsView from './components/SettingsView.vue'
 import NotFound from './components/NotFound.vue'
 
 const routes = {
-  '/': DashboardView,
+  '/dashboard': DashboardView,
   '/signup': SignupView,
   '/login': LoginView,
   '/profile': ProfileView,
@@ -36,12 +36,12 @@ export default {
 </script>
 
 <template>
-  <a href="#/">Dashboard</a> |
-  <a href="#/signup">Signup</a> |
-  <a href="#/login">Login</a> |
-  <a href="#/profile">Profile</a> |
-  <a href="#/calendar">Calendar</a> |
-  <a href="#/settings">Settings</a> |
-  <a href="#/non-existent-path">Not Found</a>
+  <a href="/dashboard">Dashboard</a> |
+  <a href="/signup">Signup</a> |
+  <a href="/login">Login</a> |
+  <a href="/profile">Profile</a> |
+  <a href="/calendar">Calendar</a> |
+  <a href="/settings">Settings</a> |
+  <a href="/non-existent-path">Not Found</a>
   <component :is="currentView" />
 </template>
