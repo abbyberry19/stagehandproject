@@ -1,11 +1,9 @@
 <template>
-  <v-card>
-    <v-layout>
       <v-navigation-drawer
         expand-on-hover
         rail
         permanent 
-        theme = "dark"
+        theme = "light"
       >
         <v-list>
           <v-list-item
@@ -24,8 +22,6 @@
           <v-list-item prepend-icon="mdi-cog" title="Settings" value="Settings" href="/settings"></v-list-item>
         </v-list>
       </v-navigation-drawer>
-    </v-layout>
-  </v-card>
 </template>
 
 <script>

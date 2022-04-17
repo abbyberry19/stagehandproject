@@ -1,5 +1,5 @@
 <template>
-<v-theme-provider theme="dark" with-background>
+<v-theme-provider theme="light">
   <NavDrawer />
   <v-row class="fill-height">
     <v-col>

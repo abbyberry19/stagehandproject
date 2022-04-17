@@ -1,8 +1,7 @@
 <template>
-<v-theme-provider class="bg-gray-100">
   <v-container class="h-screen ">
     <v-row no-gutters cols="12">
-      <!-- <NavDrawer /> -->
+      <NavDrawer />
       <v-col md="8">
         <v-card
           theme="light"
@@ -23,17 +22,16 @@
       </v-col>
     </v-row>
   </v-container>
-  </v-theme-provider>
 </template>
 
 <script>
-// import NavDrawer from './ui/NavDrawer.vue'
+import NavDrawer from './ui/NavDrawer.vue'
 // import AppHeader from './ui/AppHeader.vue'
 
 export default {
   name: 'DashboardView',
   components: {
-    // NavDrawer,
+    NavDrawer,
     // AppHeader
   }
 }
