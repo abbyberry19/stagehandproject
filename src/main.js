@@ -4,6 +4,8 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import './style/style.css'
 import router from './router'
+// import { SetupCalendar } from 'v-calendar';
+
 
 loadFonts()
 

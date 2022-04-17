@@ -7,7 +7,7 @@
 import NavDrawer from './ui/NavDrawer.vue'
 
 export default {
-  name: 'DashboardView',
+  name: 'ProfileView',
   components: {
     NavDrawer
   }

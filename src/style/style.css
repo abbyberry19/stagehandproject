@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Open+Sans&display=swap');
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-color {
+    background-color: #e8eaf6 !important;
+}
