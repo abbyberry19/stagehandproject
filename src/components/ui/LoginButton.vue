@@ -2,6 +2,8 @@
     <v-btn
       variant="outlined"
       color="indigo"
+      rounded="lg"
+      class="px-8"
     >
       Login
     </v-btn>

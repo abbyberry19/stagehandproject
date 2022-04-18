@@ -1,6 +1,6 @@
 <template>
 <v-app class="bg-gray-100">
-  
+  <AppHeader />
     <v-main>
 
       <v-container fluid>
@@ -15,14 +15,14 @@
 </template>
 
 <script>
-//import Navbar from './components/Navbar.vue'
+import AppHeader from './components/ui/AppHeader.vue'
 // import NavDrawer from './components/ui/NavDrawer.vue'
 
 export default {
   name: 'App',
 
   components: {
-    // NavDrawer
+    AppHeader
   },
 
   data: () => ({
