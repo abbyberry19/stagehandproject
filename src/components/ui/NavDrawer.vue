@@ -1,9 +1,10 @@
 <template>
       <v-navigation-drawer
+        clipped
         expand-on-hover
         rail
         permanent 
-        theme = "light"
+        flat
       >
         <v-list>
           <v-list-item
@@ -13,7 +14,7 @@
           ></v-list-item>
         </v-list>
 
-        <v-divider></v-divider>
+        <v-divider color="white"></v-divider>
 
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-home-variant" title="Dashboard" value="Dashboard" href="/dashboard"></v-list-item>
