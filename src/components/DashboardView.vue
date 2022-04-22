@@ -14,17 +14,12 @@
           <h1 class="title text-h5 mt-2 ml-4">Chat</h1>
           <v-btn variant="plain">Newest</v-btn>
           <v-btn variant="plain">Oldest</v-btn>
-          
           <PostForm />
-
-          <div v-for="post in posts" :key="post">
-            <p>
-              <span
-                ><b>{{ post.title }}</b></span
-              ><br />
-              <span>{{ post.description }}</span>
-            </p>
-          </div> 
+          <ul v-for="post in posts" :key="post._id">
+            <li>{{ post.title }}</li>
+            <li>{{ post.description }}</li>
+            <a href="#" @click="deletePost(post._id)">Delete</a>
+          </ul>
         </v-card>
       </v-col>
     </v-row>
@@ -33,7 +28,7 @@
 
 <script>
 import NavDrawer from "./ui/NavDrawer.vue";
-import PostsService from '@/services/PostsService'
+import PostsService from '../services/PostsService.js'
 import PostForm from "./ui/PostForm.vue"
 
 export default {
@@ -42,7 +37,7 @@ export default {
     NavDrawer,
     PostForm,
   },
-   data () {
+  data () {
     return {
       posts: []
     }
@@ -52,9 +47,16 @@ export default {
   },
   methods: {
     async getPosts () {
-      const response = await PostsService.fetchPosts()
-      this.posts = response.data
-    }
+      const response = await PostsService.getPosts()
+      this.posts = response.data["posts"]
+    },
+    async deletePost (id) {
+      await PostsService.deletePost(id)
+      this.$router.go()
+    },
+    onSubmit () {
+      this.$router.go()
+    },
   },
 };
 </script>

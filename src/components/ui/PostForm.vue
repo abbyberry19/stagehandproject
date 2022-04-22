@@ -16,6 +16,7 @@
         >
          <h1 class="title text-h5 mt-4">Create a Post</h1>
             <v-text-field 
+                v-model="title"
                 color="primary" 
                 label="Title"
                 density = "comfortable"
@@ -24,6 +25,7 @@
                 class="pt-4">
             </v-text-field>
             <v-textarea 
+                v-model="description"
                 color="primary" 
                 label="Description"
                 density = "comfortable"
@@ -42,7 +44,8 @@
 </template>
 
 <script>
-import PostsService from '@/services/PostsService'
+import PostsService from '../../services/PostsService.js'
+
 export default {
   name: 'NewPost',
   data () {
@@ -58,7 +61,7 @@ export default {
         title: this.title,
         description: this.description
       })
-      this.$router.push({ name: 'Posts' })
+    this.$router.go()
     }
   }
 }
