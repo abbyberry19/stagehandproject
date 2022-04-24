@@ -1,9 +1,11 @@
 <template>
   <div class="text-center">
     <v-btn
+      class="align-middle"
       color="primary"
+      size="small"
     >
-      Add new post
+      New Post
 
       <v-dialog
         v-model="dialog"
