@@ -1,7 +1,7 @@
 <template>
     <v-btn
       variant="outlined"
-      color="indigo"
+      color="primary"
       rounded="lg"
       class="px-8"
     >
